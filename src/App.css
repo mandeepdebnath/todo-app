@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 50px 30px; */
+  padding: 20px;
+}
+
+.wrapper {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.wrapper .text-area {
+  width: 600px;
+}
+.wrapper .heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.show-list {
+  width: 100%;
+}
+
+.show-list .each-item {
+  padding: 10px 20px;
+  background-color: rgb(212, 212, 212, 0.5);
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.show-list .each-item h3 {
+  font-weight: 400;
+}
+
+.todo-buttons .btn {
+  margin-right: 10px;
+}
+
+.container .delete-all-btn {
+  margin-top: 20px;
+}
+
+.copyright {
+  font-size: 15px;
+  width: 100vw;
+  margin-top: auto;
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .text-area {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .text-area {
+    width: 300px;
+  }
+}
